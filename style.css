@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* NAV BAR STYLE CREATE */
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 0 12px;
+    text-decoration: none;
+    color:black;
+    border-bottom: 2px solid transparent;
+}
+.navbar-nav .nav-link:hover {
+    color:goldenrod;
+    border-bottom: 2px solid goldenrod;
+}
+
+.navbar {
+     background-color: bisque;
+}
+
+/* ICON CREATE */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+
+}
+
+@media screen {
+    .icons {
+        margin-top: 15px;
+    }
+}
+
+.icons img {
+    width: 16px;
+    height: 16px;
+
+}
+
+/* HERO SECTION */
+
+.hero {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+    background-color: bisque;
+
+}
+
+.hero-text {
+    font-size: 70px !important;
+    font-weight: 800 !important;
+    /* font-weight: bold; */
+    padding-left: 200px;
+    /* flex: 1; */
+    line-height: 1.1 !important;
+
+}
+
+.hero-text h1 span {
+    display: block;
+}
+
+.shop-btn {
+    padding: 10px 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 18px !important;
+    font-weight: 700px !important;
+    letter-spacing: 1px;
+    background-color: transparent;
+    font-family: inherit;
+
+}
+.hero-image img {
+    width: 650px;
+    max-width: 100%;
+    height: 800px;
+    transform: none;
+}
+
+@media (max-width:768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-text {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+}
+
+.categories {
+    display: flex;
+    width: 100vw;
+}
+
+.category {
+    text-align: center;
+    padding: 40px 10px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+     background-color: lightgray;
+}
+
+.category img {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.category h3 {
+    margin-top: 15px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.view-btn {
+    margin-top: 15px;
+    padding: 8px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+
+@media (max-width:768px) {
+    .categories {
+        flex-direction: column;
+
+    }
+    .category img {
+        width: 90%;
+    }
+    .category {
+        padding: 30px 0;
+    }
+}
+.top-picks {
+    padding: 80px 20px;
+    text-align: center;
+    width: 100%;
+}
+.top-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    background-color: none;
+}
+.top-heading p {
+    color: gray;
+    margin-top: 40px;
+    background-color: none;
+}
+ .products {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    padding: 20px;
+    background: white;
+    box-sizing: border-box;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 40px;
+}
+.btn button {
+    padding: 12px 35px ;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid black;
+
+}
+
+@media (max-width:768px) {
+    .products {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .product-card img {
+        height: 180px;
+    }
+    .top-heading {
+        font-size: 24px;
+    }
+}
+
+/* ASGAARD SLTYLE */
+.asgaard-section {
+padding: 80px 20px;
+background-color: #f5f0f0;
+}
+ .asgaard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+ }
+ .asgaard-img img{
+width: 500px;
+ }
+ .asgaard-text {
+    text-align: center;
+ }
+
+ .asgaard-text p {
+color:black;
+font-size: 14px;
+font-weight: bold;
+ }
+ .asgaard-text h2 {
+    font-size: 40px;
+    margin: 10px 0px 20px 0px;
+
+ }
+ .asgaard-text button {
+    padding: 12px 60px;
+    border: 1px solid black;
+    background: none;
+    font-size: 14px;
+    
+ }
+ .asgaard-text button:hover {
+    background: black;
+    color: white;
+    transition: 2s;
+ }
+ @media (max-width:768px) {
+    .asgaard {
+        flex-direction: column;
+        text-align: center;
+    }
+    .asgaard-img {
+        width: 90%;
+    }
+    .asgaard-text {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .asgaard-text h2 {
+        font-size: 28px;
+    }
+    .asgaard-text button {
+        padding: 10px 30px;
+    }
+ }
+/* BLOGS STYLE */
+.blogs {
+padding:60px 5%;
+text-align:center;
+}
+
+.blog-heading{
+font-size:32px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.blog-subtitle{
+color:gray;
+margin-bottom:40px;
+}
+
+.blog-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.blog-card{
+width:300px;
+}
+
+.blog-card img{
+width:100%;
+height:auto;
+}
+
+.blog-card h4{
+margin-top:15px;
+font-size:18px;
+}
+
+.read-more{
+display:inline-block;
+margin-top:10px;
+text-decoration:none;
+border-bottom:2px solid black;
+font-weight:500;
+color: black;
+}
+/* INSTAGRAM STYLE */
+.instagram-section {
+    background-image: url(Assissts/insta-background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+}
+.instagram-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.instagram-text p {
+    margin-top: 10px;
+    color: gray;
+}
+.insta-btn {
+    margin-top: 20px;
+    padding: 12px 30px ;
+    border-radius: 30px;
+    border: none;
+    background: white;
+    font-weight: 600;
+}
+@media (max-width:768px) {
+    .instagram-section {
+        padding: 60px 20px;
+    }
+    .instagram-text h2 {
+        font-size: 28px;
+    }
+    .instagram-text p {
+        font-size: 14px;
+    }
+    .insta-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+/* FOOTER STYLE */
+.footer-address {
+    padding-left: 20px;
+    font-weight: bold;
+}
+.footer {
+    padding: 80px 0px;
+    background-color: #fff;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+.footer h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer ul li {
+    margin-bottom: 10px;
+}
+.footer-news input P{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 8px;
+    outline: none;
+}
+.footer-btn {
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+}
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+@media (max-width:768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
