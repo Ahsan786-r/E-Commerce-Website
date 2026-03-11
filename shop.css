@@ -322,7 +322,7 @@ padding:5px;
     color: gray;
 }
 @media (max-width:768px) {
-    .footer-container {
+    .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
     }
